@@ -8,11 +8,11 @@ export default class BookCount extends Component {
 	}
 
 	render() {
-		const { title } = this.props;
+		const { title, count } = this.props;
 		return (
 			<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 				<Text style={{ fontSize: 15 }}>{title}</Text>
-				<Text>0</Text>
+				<Text>{count}</Text>
 			</View>
 		);
 	}
